@@ -14,3 +14,8 @@ $routes->get('pakaian', 'Home::pakaian');
 $routes->get('pertukangan', 'Home::pertukangan');
 $routes->get('elektronik', 'Home::elektronik');
 $routes->get('snack', 'Home::snack');
+$routes->get('/produk', 'ProdukController::index');
+$routes->get('/keranjang', 'TransaksiController::index');
+$routes->get('login', 'AuthController::login');
+$routes->post('login', 'AuthController::login');
+$routes->get('logout', 'AuthController::logout');
